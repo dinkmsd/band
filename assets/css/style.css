@@ -1,0 +1,617 @@
+/*Reset CSS8*/
+
+.clear
+{
+    clear: both;
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* background-color: cadetblue; */
+}
+
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col
+{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-half
+{
+    width: 50%;
+}
+
+.col-full
+{
+    width: 100%;
+}
+
+.padding-64-16
+{
+    padding:64px 16px;
+}
+
+.padding-16
+{
+    padding:0 16px;
+}
+
+.width-third
+{
+    max-width: 33.33333%;
+}
+
+html
+{
+    scroll-behavior: smooth;
+    font-family: Helvetica, Arial, sans-serif;/*font chữ cho full trang lấy theo thứ tự ưu tiên nếu k có*/
+}
+
+.padding-32-8
+{
+    padding:32px 8px;
+}
+
+.padding-8
+{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+#main{
+
+}
+#header{
+    position: fixed;
+    height: 46px;
+    background-color: black;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#nav > li >  a
+{
+    color: #fff;
+    display: inline-block; /*tăng kích thước thẻ a do nó mặc định là inline nên k thể xác định kích thước*/
+    text-transform: uppercase ;
+}
+
+#nav li a
+{
+    text-decoration: none;/*kiểu chữ */
+    line-height: 46px;/*//kích thước phần bôi đen của chữ*/
+    padding: 0 24px;/*//thụt lề trái phải trên dưới*/
+}
+
+#nav > li:hover > a
+{
+    color:black;
+    background-color: #ccc;
+}
+ 
+#nav li:hover .subnav
+{
+    display: block;
+    background-color: #ccc;
+}
+
+#nav
+{
+    display: inline-block;
+}
+
+#nav, .subnav 
+{
+    list-style-type: none;
+    
+}
+
+#nav > li
+{
+    display: inline-block;
+}
+
+#nav li
+{
+    position: relative;     /*xếp dọc*/
+}
+
+#nav .subnav 
+{
+    min-width: 160px;/* chiều dài tối thiểu của subnav*/
+    display: none;
+    position:absolute;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);/* đổ bóng cho box */
+    top:100%;
+    left: 0;
+}
+
+#nav .nav-arrow-down
+{
+    font-size: 12px;
+}
+
+#nav .subnav li:hover a
+{
+    color: black;
+    background-color: blanchedalmond;
+}
+
+#nav .subnav a
+{
+    font-size: 16px;
+    padding: 0 16px;
+    color: black;
+    display: block;
+    
+}
+
+#header .menu-btn:hover 
+{
+    background-color: #ccc;
+    color: black;
+}
+
+#header .menu-btn:hover .search-icon 
+{
+    color: black;
+}
+
+#header .search-btn:hover
+{
+    background-color: #f44336;
+    color: black;
+}
+
+#header .menu-btn
+{
+    position:absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#header .search-btn
+{
+    float:right;
+    cursor: pointer; /**/
+}
+
+#header .search-icon
+{
+    color: #fff;
+    line-height: 46px;
+    padding: 0 16px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#slider .text-content
+{
+    position:absolute;
+    bottom: 47px;
+    color: #fff;
+    /* left:50%;
+    transform: translateX(-50%); */
+    width: 100%;
+    text-align: center;
+}
+ 
+#slider .text-heading
+{
+    font-weight: 500;
+    font-size:24px;
+    margin-bottom:25px;
+}
+
+#slider .text-description
+{
+    font-size:15px;
+}
+
+#slider{
+    position: relative;
+    margin-top: 46px;
+    padding-top:50%;
+    background: url('/assets/img/slider/slider1.jpg') top center / cover no-repeat;
+
+}
+
+#content{
+    
+}
+
+#content .content-section
+{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+#content .about-text
+{
+    text-align: justify;
+}
+
+#content .content-section .content-heading
+{
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-size: 30px;
+}
+
+#content .content-section .content-heading, 
+#content .content-section .sub-heading
+{
+    margin:10px 0;
+    text-align: center;
+}
+
+
+#content .content-section .sub-heading
+{
+    font-style: italic;
+    opacity: 60%;
+}
+
+#content .content-section .about-text
+{
+    font-size:15px;
+    line-height: 20px;
+}
+
+#content .member-list
+{
+    margin: 32px 0;
+}
+
+#content .member-item
+{
+    float: left;
+    width: 33.33333%;
+    text-align: center;
+}
+
+#content .member-name
+{
+    padding-bottom:15px;
+}
+
+#content .member-img
+{
+    width: 60%;
+    border-radius: 5px;
+}
+
+#content .tour-section
+{
+    background-color: black;
+ 
+}
+
+#content .schedule-ticked
+{
+    background-color: white;
+    margin-top: 30px;
+}
+
+
+
+.schedule-ticked li
+{
+    list-style: none;
+    font-size: 15px;
+    padding: 10px 16px;
+    border-bottom: 1px solid #ddd;
+    color: #757575;
+}
+
+.schedule-ticked .sold-out
+{
+    background-color: #f44336;
+    padding: 0 8px;
+    color: white;
+    margin-left: 16px;
+}
+
+.schedule-ticked .quantity
+{
+    float: right;
+    width: 24px;
+    height: 24px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -3px;
+
+}
+
+#content .place-ticked
+{
+    /* padding-top: 32px; */
+}
+
+#content .place-ticked .place-show
+{
+    background-color: #000;
+    float: left;   
+}
+
+#content .place-ticked .name-place
+{
+    padding:0 16px;
+    background-color: #fff;
+    margin-top: -4px;
+}
+
+
+#content .place-show .photo-place
+{
+    width: 100%;
+}
+
+#content .place-show .photo-place:hover
+{
+    
+    opacity: 80%;
+}
+
+.place-show .name-of-city
+{
+    line-height: 40px;
+}
+
+.place-show .date-of-show
+{
+    line-height: 40px;
+    opacity: 60%;
+}
+
+.place-show .detail-of-city
+{
+    margin: 15px 0;
+    line-height: 20px;
+}
+
+.button-buy-ticket
+{
+    color:#fff;
+    background-color: #000;
+    font-size: 15px;
+    margin-bottom: 20px;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.button-buy-ticket:hover
+{
+    color:#000;
+    background-color: #ccc;
+}
+
+.my-contact
+{
+    width: 49.5%;
+    float: left;
+    margin-top: 20px;
+}
+
+.your-contact
+{
+    width: 49.9%;
+    float: left;
+    right: 0px;
+}
+
+.your-contact::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+
+.my-contact::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+
+
+.contact-id::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+
+
+.box-half
+{
+    width: 49.5%;
+    float:left;
+}
+
+.detail-contact .my-contact li
+{
+    list-style: none;
+    
+}
+
+.edit-icon
+{
+    padding-right: 20px;
+    font-size: 18px;
+}
+
+.text-box
+{
+    float:right;
+}
+
+.form-control
+{
+    padding: 8px;
+    width: 100%;
+    margin:6px;
+    border: 1px solid #ccc;
+}
+
+.email-control
+{
+    margin-left: 9px;
+}
+
+.message-box
+{
+    margin-top: 8px;
+}
+
+
+
+#footer{
+    padding-top:64px;
+    padding-bottom: 64px;
+
+}
+
+.social-icon
+{
+    font-size: 24px;
+    
+
+}
+
+#footer  .social-media
+{
+    opacity: 60%;
+    text-align: center;
+}
+
+.opacity-hover:hover
+{
+    opacity: 80%;
+    cursor:pointer;
+}
+
+.modal
+{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color:rgba(0, 0, 0, 0.3);
+    z-index: 1;    
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+
+
+.modal.open
+{
+    display: flex;
+}
+
+.modal .modal-header
+{
+    background-color: #009688;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    color: #fff     ;
+}
+
+.close-icon
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.close-icon:hover
+{
+    color: #000;
+    background-color: #ccc;
+}
+
+.modal .box-cart
+{
+    background-color: #fff;
+    margin:auto;
+    width: 60%;
+    animation: modalFadeIn ease 0.4s;
+    position: relative;
+
+}
+
+.modal-heading
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.infor-cart
+{
+    padding: 16px 16px;
+}
+
+.box-submit
+{
+    width: 100%;
+    padding: 8px 8px;
+    border: 1px solid #ccc;
+}
+
+.margin-15
+{
+    margin:15px 0;
+}
+
+
+.submit-button
+{
+    width: 100%;
+    border: none;
+    background-color: #009688;
+    padding-top:16px;
+    padding-bottom: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+.submit-button:hover
+{
+    background-color: #ccc;
+    color:#fff;
+}
+
+@keyframes modalFadeIn 
+{
+    from 
+    {
+        opacity: 0;
+        transform: translateY(-100px);
+    }   
+    to
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* position
+cách viết background image */

@@ -1,0 +1,78 @@
+/* PC */
+@media (min-width:1024px){
+
+}
+
+/* Tablet */
+@media (min-width:740px) and (max-width:1023px){
+    
+}
+
+/* Mobile */
+@media(max-width:739px){
+    
+    #header{
+        overflow: hidden;
+    }
+    
+    #nav > li {
+        display: block;
+    }
+    
+    #header .search-btn 
+    {
+        display: none;
+    }
+    
+    #header .menu-btn 
+    {
+        display: block;
+    }
+    .width-third {
+        max-width: 100%;
+    }
+    #content .place-ticked .place-show {
+        background-color: #000;
+        float: none;
+        margin-bottom: 16px;
+    }
+    .my-contact {
+        width: 100%;
+        float: none;
+        margin-top: 20px;
+        margin-left: 16px;
+    }
+    .your-contact {
+        width: 100%;
+        float: left;
+        right: 0px;
+        margin-right: 16px;
+    }
+    .modal .box-cart {
+        background-color: #fff;
+        margin: auto;
+        width: 90%;
+        animation: modalFadeIn ease 0.4s;
+        position: relative;
+    }
+    .modal .modal-header {
+        background-color: #009688;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        color: #fff;
+    }
+    .margin-15 {
+        margin: 10px 0;
+    }
+    #content .member-item {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    #content .content-section .about-text {
+        font-size: 15px;
+        line-height: 20px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
